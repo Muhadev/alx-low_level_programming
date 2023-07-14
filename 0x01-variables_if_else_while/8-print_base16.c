@@ -17,7 +17,6 @@ else
 {
 	putchar('A' + num - 10);
 }
-	putchar(num);
 }
 putchar('\n');
 return (0);
