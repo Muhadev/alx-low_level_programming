@@ -15,7 +15,7 @@ if (num < 10)
 }
 else
 {
-	putchar('A' + num - 10);
+	putchar('a' + num - 10);
 }
 }
 putchar('\n');
