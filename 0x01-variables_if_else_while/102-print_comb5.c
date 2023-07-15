@@ -6,24 +6,20 @@
  */
 int main(void)
 {
-int number1, number2;
-for (number1 = 0; number1 < 100; number1++)
+int num1, num2;
+for (num1 = 0; num1 <= 98; num1++)
 {
-for (number2 = 0; number2 < 100; number2++)
+for (num2 = num1 + 1; num2 <= 99; num2++)
 {
-if (number1 <= number2)
-{
-	putchar('0' + number1 / 10);
-	putchar('0' + number1 % 10);
+	putchar((num1 / 10) + '0');
+	putchar((num1 % 10) + '0');
 	putchar(' ');
-	putchar('0' + number2 / 10);
-	putchar('0' + number2 % 10);
-if (number1 != 99 || number2 != 99)
-{
+	putchar((num2 / 10) + '0');
+	putchar((num2 % 10) + '0');
+if (num1 == 98 && num2 == 99)
+continue;
 	putchar(',');
 	putchar(' ');
-}
-}
 }
 }
 putchar('\n');
