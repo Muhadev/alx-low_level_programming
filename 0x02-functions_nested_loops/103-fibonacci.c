@@ -6,25 +6,18 @@
  *
  * Return: Always 0.
  */
-#include <stdio.h>
-int main() {
-int fib[50];
-	fib[0] = 1;
-	fib[1] = 2;
-for (int i = 2; i < 50; i++)
+int main(void)
 {
-	fib[i] = fib[i - 1] + fib[i - 2];
-}
-for (int i = 0; i < 50; i++)
+int i = 0;
+long j = 1, k = 2, sum = k;
+while (k + j < 4000000)
 {
-	printf("%d", fib[i]);
-if (i < 49) {
-	printf(", ");
+	k += j;
+if (k % 2 == 0)
+	sum += k;
+	j = k - j;
+	++i;
 }
-else
-{
-	printf("\n");
-}
-}
+	printf("%d\n", sum);
 return 0;
 }
