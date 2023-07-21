@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * print_triangle - Print a triangle of '#' character:wq
- * 
+ * print_triangle - Print a triangle of square according parameter
  * @size: The size (height) of the triangle.
+ * Return: empty
  */
 
 void print_triangle(int size)
