@@ -1,9 +1,11 @@
 #include "main.h"
 
 /**
- * print_triangle - Print a right-angled triangle of '#' characters in the terminal.
+ * print_triangle - Print a triangle of '#' character:wq
+ * 
  * @size: The size (height) of the triangle.
  */
+
 void print_triangle(int size)
 {
 if (size <= 0)
