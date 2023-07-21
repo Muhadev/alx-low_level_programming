@@ -21,6 +21,6 @@ if (i > 9)
 
 }
 
-	_putchar('\n');
+_putchar('\n');
 }
 }
