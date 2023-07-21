@@ -17,9 +17,9 @@ else
 {
 for (x = 0; x <= size; x++)
 {
-for (y = 1; y <= i; y++)
+for (y = size - x; y > 1; y--)
 {
-	_putchar('32');
+	_putchar(32);
 }
 for (z = 0; z <= x; z++)
 {
