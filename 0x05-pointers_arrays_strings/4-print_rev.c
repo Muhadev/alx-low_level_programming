@@ -9,14 +9,18 @@
 
 void print_rev(char *s)
 {
-if (*s != '\0')
+int c = 0;
+
+while (s[c] != '\0')
 {
-	print_rev(s + 1);
-	_putchar(*s);
+	c++;
 }
-else
+
+for (c -= 1; c >= 0; c--)
 {
+	_putchar(s[c]);
+}
+
 _putchar('\n');
-}
 }
 
