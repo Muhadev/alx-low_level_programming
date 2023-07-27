@@ -2,9 +2,9 @@
 #include <stdio.h>
 
 /**
- * rot13 - encoder rot13
- * @s: pointer to string params
- * return: *s
+ * rot13 - encodes a string.
+ * @s: pointer to string params.
+ * return: *s.
  */
 char *rot13(char *s)
 {
