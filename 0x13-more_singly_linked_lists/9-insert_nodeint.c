@@ -17,7 +17,7 @@ unsigned int count = 0;
 if (!head)
 return (NULL);
 if (idx == 0)
-return (add_nodeint_end(head, n));
+return (add_nodeint(head, n));
 
 	temp = *head;
 while (temp)
