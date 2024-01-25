@@ -1,0 +1,30 @@
+# -*- MakeFile -*-
+
+#target: dependencies
+#	action
+
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+
+RM = rm -f
+
+NAME = school
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	$(RM) *~ \#* $(OBJ) $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+	$(RM) $(NAME)
+
+re: fclean all
